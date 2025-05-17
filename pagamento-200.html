@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento - R$200</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f8f8f8;
+      text-align: center;
+    }
+    .container {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: inline-block;
+      max-width: 400px;
+    }
+    img {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+    .pix-key {
+      background: #eee;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      word-break: break-all;
+    }
+    button {
+      padding: 10px 20px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #218838;
+    }
+    .label {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Pagamento - R$200</h2>
+    <p>Max Caçambas</p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=00020126530014br.gov.bcb.pix0114+55119374502740213Max Cacambas 5204000053039865406200.005802BR5925EMERSON DE OLIVEIRA SANTO6009SAO PAULO62580520SAN2025051611393778350300017br.gov.bcb.brcode01051.0.063040F34&size=300x300" alt="QR Code Pix">
+    <div class="label">PIX Copia e Cola:</div>
+    <div class="pix-key" id="pixKey">
+      00020126530014br.gov.bcb.pix0114+55119374502740213Max Cacambas 5204000053039865406200.005802BR5925EMERSON DE OLIVEIRA SANTO6009SAO PAULO62580520SAN2025051611393778350300017br.gov.bcb.brcode01051.0.063040F34
+    </div>
+    <button onclick="copiarChavePix()">Copiar Chave Pix</button>
+  </div>  <script>
+    function copiarChavePix() {
+      const chave = document.getElementById('pixKey').innerText;
+      navigator.clipboard.writeText(chave).then(() => {
+        alert('Chave Pix copiada!');
+      });
+    }
+  </script></body>
+</html>

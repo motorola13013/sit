@@ -1,0 +1,250 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MaxCaçambas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background-color: #2a6f3e;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+    header img {
+      height: 40px;
+      margin-right: 15px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      margin: 0;
+      font-size: 1em;
+      margin-left: auto;
+    }
+    .banner {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+    .section {
+      padding: 30px;
+      text-align: center;
+      background: white;
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2a6f3e;
+      margin-bottom: 20px;
+    }
+    .destaque {
+      font-size: 1.2em;
+      color: #1a4a2a;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    img.full {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+    }
+    th {
+      background-color: #2a6f3e;
+      color: white;
+    }
+    .btn-pagamento {
+      background-color: #25d366;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-pagamento:hover {
+      background-color: #1ebe57;
+    }
+    .depoimento {
+      font-style: italic;
+      color: #444;
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #2a6f3e;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #245e35;
+    }
+    footer {
+      background-color: #2a6f3e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #a9d18e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header p {
+        margin-left: 0;
+        margin-top: 5px;
+      }
+      .banner, img.full {
+        max-height: 200px;
+      }
+      form {
+        padding: 0 10px;
+      }
+    }/* Botão WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.whatsapp-float:hover {
+  background-color: #1ebe57;
+}
+
+  </style>
+</head>
+<body><header>
+  <img src="logo.png" alt="Logo MaxCaçambas" />
+  <h1>MaxCaçambas</h1>
+  <p>Atendemos todo o Brasil</p>
+</header><img src="caçambinha.png" alt="Banner MaxCaçambas" class="banner" /><div class="section">
+  <h2>MaxCaçambas - Mais de 10 anos prestando atendimento rápido, fácil e eficiente</h2>
+  <p class="destaque">Alugamos caçambas, retroescavadeiras e outros equipamentos para obras e reformas.</p>
+  <p>Atendemos todo o Brasil com agilidade e profissionalismo. Com a MaxCaçambas, você tem garantia de qualidade, rapidez na entrega e retirada, e preços justos.</p>
+  <p class="destaque">Atendimento 24 horas por dia, 7 dias por semana!</p>
+  <img src="caçambass.png" alt="Máquinas para aluguel" class="full" />
+</div><div class="section">
+  <h2>Tabela de Preços</h2>
+  <table>
+    <tr>
+      <th>Serviço</th>
+      <th>Preço</th>
+      <th>Ação</th>
+    </tr>
+    <tr>
+      <td>Caçamba Pequena Por Dia</td>
+      <td>R$ 200,00</td>
+      <td><a href="pagamento-200.html" class="btn-pagamento">Comprar</a></td>
+    </tr>
+    <tr>
+      <td>Caçamba Média Por Dia</td>
+      <td>R$ 250,00</td>
+      <td><a href="pagamento-250.html" class="btn-pagamento">Comprar</a></td>
+    </tr>
+    <tr>
+      <td>Caçamba Grande Por Dia</td>
+      <td>R$ 300,00</td>
+      <td><a href="pagamento-300.html" class="btn-pagamento">Comprar</a></td>
+    </tr>
+    <tr>
+      <td>Caçamba Extra Grande Por Dia</td>
+      <td>R$ 400,00</td>
+      <td><a href="pagamento-400.html" class="btn-pagamento">Comprar</a></td>
+    </tr>
+  </table>
+</div><div class="section">
+  <h2>Depoimentos</h2>
+  <p class="depoimento">"Excelente atendimento! Solicitei uma caçamba e em menos de uma hora já estava no local. Recomendo demais!" – João M.</p>
+  <p class="depoimento">"Serviço muito rápido e de qualidade. A MaxCaçambas está de parabéns!" – Ana Paula S.</p>
+  <p class="depoimento">"Precisava urgente de uma retroescavadeira e eles me atenderam à noite, sem enrolação." – Marcos L.</p>
+  <p class="depoimento">"Empresa confiável e com preços justos. Já usei várias vezes e sempre foram impecáveis." – Renata V.</p>
+  <p class="depoimento">"Atendimento 24h de verdade! Fiquei impressionado com a agilidade." – Carlos T.</p>
+</div><div class="section">
+  <h2>Contato</h2>
+  <form action="https://formsubmit.co/alunospilotos@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false" />
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="Nome" required /><label for="email">E-mail:</label>
+<input type="email" id="email" name="Email" required />
+
+<label for="telefone">Telefone:</label>
+<input type="tel" id="telefone" name="Telefone" />
+
+<label for="mensagem">Mensagem:</label>
+<textarea id="mensagem" name="Mensagem" rows="5" required></textarea>
+
+<button type="submit">Enviar</button>
+
+  </form>
+</div><footer>
+  <p>© 2014 MaxCaçambas - Todos os direitos reservados |
+    <a href="Politica-Privacidade.html">Política de Privacidade</a>
+  </p>
+</footer><a class="whatsapp-float" href="https://wa.me/5599999999999" target="_blank">
+  WhatsApp
+</a></body>
+</html>

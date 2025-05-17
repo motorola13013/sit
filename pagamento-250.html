@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pagamento - R$250</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8f8f8; padding: 20px; text-align: center; }
+    .card { background: #fff; padding: 30px; border-radius: 10px; max-width: 400px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .pix-code { word-break: break-all; background: #eee; padding: 15px; border-radius: 8px; margin: 20px 0; }
+    .btn { background: green; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>R$250</h2>
+    <p>Use o QR Code abaixo para pagar via PIX:</p>
+    <img src="qr-pix-250.png" alt="QR Code PIX" width="200">
+    <p>Ou copie e cole a chave PIX:</p>
+    <div class="pix-code">
+      00020126530014br.gov.bcb.pix0114+55119374502740213Max Cacambas 5204000053039865406250.005802BR5925EMERSON DE OLIVEIRA SANTO6009SAO PAULO62580520SAN2025051611393778350300017br.gov.bcb.brcode01051.0.063040F34
+    </div>
+    <button class="btn" onclick="copyPix()">Copiar Chave PIX</button>
+    <p><strong>MAX CAÇAMBAS</strong></p>
+  </div>
+
+  <script>
+    function copyPix() {
+      const code = `00020126530014br.gov.bcb.pix0114+55119374502740213Max Cacambas 5204000053039865406250.005802BR5925EMERSON DE OLIVEIRA SANTO6009SAO PAULO62580520SAN2025051611393778350300017br.gov.bcb.brcode01051.0.063040F34`;
+      navigator.clipboard.writeText(code);
+      alert("Chave PIX copiada!");
+    }
+  </script>
+</body>
+</html>
